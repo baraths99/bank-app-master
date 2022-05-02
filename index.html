@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/icons.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="theme.js"></script>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <title>Home</title>
+  </head>
+  <body class="w-100">
+    <nav>
+      <ul class="navbar-list">
+        <li>
+          <button class="nav-btn open-menu"><i class="fal fa-bars"></i></button>
+        </li>
+        <li>
+          <img src="./assets/img/logo-fiserv-white.png" alt="fiserv logo" />
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="sidebar">
+      <div class="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <ul class="list-unstyled menu-elements mt-5">
+        <li class="active">
+          <a class="scroll-link" href="index.html"
+            ><i class="fas fa-home"></i> Home</a
+          >
+        </li>
+
+        <li>
+          <a class="scroll-link" href="crypto-transaction.html"
+            ><i class="fas fa-exchange-alt"></i> My Transactions</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="portfolio.html"
+            ><i class="fas fa-user"></i> My Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="themes.html"
+            ><i class="fas fa-cog"></i> Settings</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="#section-6"
+            ><i class="fas fa-envelope"></i> Contact us</a
+          >
+        </li>
+        <!-- <li>
+          <a
+            href="#otherSections"
+            data-toggle="collapse"
+            aria-expanded="false"
+            class="dropdown-toggle"
+            role="button"
+            aria-controls="otherSections"
+          >
+            <i class="fas fa-sync"></i>Other sections
+          </a>
+          <ul class="collapse list-unstyled" id="otherSections">
+            <li>
+              <a class="scroll-link" href="#section-3">Our projects</a>
+            </li>
+            <li>
+              <a class="scroll-link" href="#section-4">We think that...</a>
+            </li>
+          </ul>
+        </li> -->
+      </ul>
+    </nav>
+    <div class="overlay"></div>
+    <div class="main">
+      <div class="p-2">
+        <div class="container bg-light rounded">
+          <div class="row">
+            <div class="col-3 pt-3">
+              <img
+                class="mt-0 img-fluid rounded-circle"
+                src="./assets/img/profile.png"
+                alt="image"
+              />
+            </div>
+            <div class="col-6 py-2">
+              <div class="row">
+                <h5 class="row-sm-6">Hello,<br />Peter Parker!</h5>
+              </div>
+              <div class="row p-0">
+                <h6 class="m-0">Your Last Login:</h6>
+                <p class="m-0"><small>28 March 2022 at 4:15 PM</small></p>
+              </div>
+            </div>
+            <div class="col-3 py-2 align-self-center">
+              <h6 class="text-center">Account Details</h6>
+              <div class="text-center"><i class="fas fa-search"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2">
+        <div class="container rounded">
+          <div class="row acc-dropdown">
+            <a
+              ><select class="form-select">
+                <option selected>SBA-1000001960</option>
+                <option value="1000001961">SBA-1000001961</option>
+                <option value="1000001962">SBA-1000001962</option>
+                <option value="1000001963">SBA-1000001963</option>
+              </select>
+              <span class="material-icons p-2 bg-light"> east </span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="p-2 sidebar-options">
+        <div class="container bg-white rounded">
+          <div class="row-2 py-2">
+            <li>
+              <a href="/assistance" title="ASSISTANCE">
+                <i class="fa-solid fa-user-headset"></i
+                ><span>ASSISTANCE</span></a
+              >
+            </li>
+            <li>
+              <a href="/funds" title="FUND TRANSFER">
+                <i class="fas fa-university"></i><span>FUND TRANSFER</span></a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" title="CRYPTOS">
+                <i class="fab fa-btc"></i><span>CRYPTOS</span></a
+              >
+            </li>
+          </div>
+          <div class="row-2 py-2">
+            <li>
+              <a href="/cards" title="CARDS">
+                <i class="far fa-credit-card"></i><span>CARDS</span></a
+              >
+            </li>
+            <li>
+              <a href="/deposits" title="DEPOSITS">
+                <i class="fas fa-piggy-bank"></i><span>DEPOSITS</span></a
+              >
+            </li>
+            <li>
+              <a href="/services" title="SERVICES">
+                <i class="fas fa-toolbox"></i><span>SERVICES</span></a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-2 bottom">
+        <div class="container bg-light py-4">
+          <li>
+            <h2 class="text-center">
+              <a href="/ai">PRODUCT PROMOTION CAMPAIGN</a>
+            </h2>
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+  </body>
+</html>

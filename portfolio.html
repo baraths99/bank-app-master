@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="theme.js"></script>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <title>portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar-list">
+        <li>
+          <button class="nav-btn open-menu">
+            <span class="material-icons">menu</span>
+          </button>
+        </li>
+        <li>
+          <img src="./assets/img/logo-fiserv-white.png" alt="fiserv logo" />
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="sidebar">
+      <div class="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+
+      <ul class="list-unstyled menu-elements mt-5">
+        <li class="active">
+          <a class="scroll-link" href="index.html"
+            ><i class="fas fa-home"></i> Home</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="crypto-transaction.html"
+            ><i class="fas fa-exchange-alt"></i> My Transactions</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="portfolio.html"
+            ><i class="fas fa-user"></i> My Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="themes.html"
+            ><i class="fas fa-cog"></i> Settings</a
+          >
+        </li>
+        <li>
+          <a class="scroll-link" href="#section-6"
+            ><i class="fas fa-envelope"></i> Contact us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#otherSections"
+            data-toggle="collapse"
+            aria-expanded="false"
+            class="dropdown-toggle"
+            role="button"
+            aria-controls="otherSections"
+          >
+            <i class="fas fa-sync"></i>Other sections
+          </a>
+          <ul class="collapse list-unstyled" id="otherSections">
+            <li>
+              <a class="scroll-link" href="#section-3">Our projects</a>
+            </li>
+            <li>
+              <a class="scroll-link" href="#section-4">We think that...</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+      <div class="overlay"></div>
+      <div class="p-2 container-crypto">
+        <div class="container bg-light rounded">
+          <div class="row p-2 text-center">
+            <h5 class="row-sm-6 pt-2">$7548.25<br />Total Asset value</h5>
+          </div>
+          <div class="row p-2">
+            <div class="col pb-2 text-center">
+              <h6 class="m-0">$748.25</h6>
+              <p class="m-0"><small>All time Change</small></p>
+            </div>
+            <div class="col pb-2 text-center">
+              <h6 class="m-0">$58.25</h6>
+              <p class="m-0"><small>1 Day Change</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 sidebar-options">
+        <div class="container bg-white rounded">
+          <div class="row-2 py-2">
+            <li>
+              <a href="/currency" title="BUY & SELL">
+                <i class="material-icons">currency_exchange</i
+                ><span>BUY & SELL</span></a
+              >
+            </li>
+            <li>
+              <a href="/crypto" title="SWAP CRYPTO">
+                <i class="fab fa-bitcoin"></i><span>SWAP CRYPTO</span></a
+              >
+            </li>
+
+            <li>
+              <a href="/wallet" title="WALLET">
+                <i class="fas fa-wallet"></i><span>WALLET</span></a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="crypto-watchlist">
+        <div class="crypto-watchlist-header">
+          <h4>Watchlist</h4>
+        </div>
+        <div class="watchlist bg-white rounded">
+          <h4>BTC</h4>
+        </div>
+        <div class="watchlist bg-white rounded">
+          <h4>BTC</h4>
+        </div>
+      </div>
+
+      <div class="p-2 sidebar-options">
+        <div class="container bg-white rounded">
+          <a href="#" title="SWAP CRYPTO">
+            <i class="fas fa-qrcode"></i><span>Scan QR Code</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

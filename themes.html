@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="theme.js"></script>
+    <title>Theme</title>
+  </head>
+  <body onload="getTheme();">
+    <nav>
+      <ul class="navbar-list">
+        <li>
+          <button class="nav-btn open-menu"><span class="material-icons">menu</span></button>
+        </li>
+        <li><img src="./assets/img/logo-fiserv-white.png" alt="fiserv logo" /></li>
+      </ul>
+    </nav>
+        
+    <nav class="sidebar">
+      <div class="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      
+      <ul class="list-unstyled menu-elements mt-5">
+        <li class="active">
+          <a class="scroll-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a class="scroll-link" href="crypto-transaction.html"><i class="fas fa-coins"></i> Cryptos</a>
+        </li>
+        <li>
+          <a class="scroll-link" href="transaction.html"><i class="fas fa-exchange-alt"></i> My Transactions</a>
+        </li>
+        <li>
+          <a class="scroll-link" href="portfolio.html"><i class="fas fa-user"></i> My Portfolio</a>
+        </li>
+        <li>
+          <a class="scroll-link" href="themes.html"><i class="fas fa-cog"></i> Settings</a>
+        </li>
+        <li>
+          <a class="scroll-link" href="#section-6"><i class="fas fa-envelope"></i> Contact us</a>
+        </li>
+        <li>
+          <a href="#otherSections" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" role="button" aria-controls="otherSections">
+            <i class="fas fa-sync"></i>Other sections
+          </a>
+          <ul class="collapse list-unstyled" id="otherSections">
+            <li>
+              <a class="scroll-link" href="#section-3">Our projects</a>
+            </li>
+            <li>
+              <a class="scroll-link" href="#section-4">We think that...</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="main">
+    <div class="overlay"></div>
+    <div class="p-2">
+      <h6>Select Theme</h6>
+      <div class="p-3 container rounded d-flex flex-row justify-content-evenly">
+        <a id="red" class="btn red btn-circle btn-sm" onclick="setTheme('red')" style="background-color: #dc3545" role="button"></a>
+        <a id="orange" class="btn orange btn-circle btn-sm" onclick="setTheme('orange')" style="background-color: #fd7e14" role="button"></a>
+        <a id="blue" class="btn blue btn-circle btn-sm" onclick="setTheme('blue')" style="background-color: #007bff" role="button"></a>
+        <a id="green" class="btn green btn-circle btn-sm" onclick="setTheme('green')" style="background-color: #007f4f" role="button"></a>
+      </div>
+  </div>
+</div>
+  </body>
+</html>
